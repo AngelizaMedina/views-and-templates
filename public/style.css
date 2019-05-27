@@ -18,12 +18,24 @@ html{
 body{
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: rgb(122, 195, 255);
+	background-color: rgb(252, 219, 35);
+	font-family: 'Roboto', sans-serif;
+}
+
+h2{
+	font-size: 1.2em;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 3%;
 }
 
 p{
 	padding-bottom: 1em;
 	font-size: .9em;
+}
+
+a{
+	text-decoration: none;
 }
 
 /*===================================================== Overall stuff end =======================================================*/
@@ -47,11 +59,80 @@ header{
 
 nav{
 	display: flex;
+	padding: 1% 0;
+	justify-content: flex-end;
 	background-color: #000;
 }
 
 .navLinkContainer{
-	justify-content: space-between;
+	margin: 0 5%;
+}
+
+.navLink{
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.4em;
+	color: #FFF;
+}
+
+.navLink:hover{
+	color: rgb(252, 237, 35);
+}
+
+.navLink:visited{
+	color: #FFF;
 }
 
 /*=========================================================== Nav end ===========================================================*/
+
+
+/*============================================================= Main ============================================================*/
+
+main{
+	background-color: rgb(163, 163, 163);
+}
+
+/*============================================================ Main end ==========================================================*/
+
+
+/*============================================================= Footer ===========================================================*/
+
+footer{
+	display: flex;
+	padding: 1%;
+	background-color: #FFF;
+}
+
+.footerSection{
+	flex: 1;
+	text-align: center;
+}
+
+.footerSnsLink{
+	margin: 0 1%;
+	font-size: 1.8em;
+	color: #000;
+}
+
+.footerSnsLink:hover{
+	color: rgb(163, 163, 163);
+}
+
+.footerSnsLink:visited{
+	font-size: 1.8em;
+	color: #000;
+}
+
+.footerPodcastLink{
+	margin: 0 1%;
+	color: #000;
+}
+
+.footerPodcastLink:hover{
+	color: rgb(163, 163, 163);
+}
+
+.footerPodcastLink:visited{
+	color: #000;
+}
