@@ -1,13 +1,22 @@
 <nav>
 	<div class="navLinkContainer">
-		<a  class="navLink" href="http://localhost:3000/">Home</a>
+		<a  class="navLink 	<%= (typeof page != 'undefined' && page == 'home' ? 'active' : '') %>" href="http://localhost:3000/">Home</a>
 	</div>
 
 	<div class="navLinkContainer">
-		<a  class="navLink" href="http://localhost:3000/product">Products</a>
+		<a  class="navLink <%= (typeof page != 'undefined' && page == 'product' ? 'active' : '') %>" href="http://localhost:3000/product">Products</a>
 	</div>
 
 	<div class="navLinkContainer">
-		<a  class="navLink" href="http://localhost:3000/contact">Contact</a>
+		<a  class="navLink <%= (typeof page != 'undefined' && page == 'contact' ? 'active' : '') %>" href="http://localhost:3000/contact">Contact</a>
 	</div>
 </nav>
+
+<!--  
+	<%= (typeof page != 'undefined' && page == 'home' ? 'active' : '') %>
+
+	- Checks whether or not the page is not 'undefined'
+	- And! if the page is (in this case) 'home'
+	- If yes to both conditions, then insert the class 'active'
+	- This will style it differently
+-->

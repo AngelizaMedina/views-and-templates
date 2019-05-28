@@ -76,6 +76,10 @@ nav{
 	color: #FFF;
 }
 
+.active{
+	color: rgb(252, 237, 35);
+}
+
 .navLink:hover{
 	color: rgb(252, 237, 35);
 }
@@ -90,8 +94,27 @@ nav{
 /*============================================================= Main ============================================================*/
 
 main{
-	padding: 1%;
 	background-color: rgb(163, 163, 163);
+}
+
+.crusherWirelessImgContainer{
+	position: relative;
+}
+
+.crusherWirelessTxt{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.3em;
+	color: #FFF;
+	
+}
+
+.crusherWirelessImg{
+	display: block;
+	width: 100%;
 }
 
 /*============================================================ Main end ==========================================================*/
